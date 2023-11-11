@@ -12,9 +12,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
     width: 95%;
     margin-bottom: 20px;
+    padding: 20px;
     background-color: rgb(79, 24, 130);
     border-radius: 12px;
 }
@@ -67,6 +67,12 @@ main {
     row-gap: 20px;
     column-gap: 20px;
     height: 400px;
+}
+.answers.last {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 }
 .answer {
     display: flex;
