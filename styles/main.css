@@ -68,12 +68,6 @@ main {
     column-gap: 20px;
     height: 400px;
 }
-.answers.last {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-}
 .answer {
     display: flex;
     align-items: center;
@@ -102,4 +96,10 @@ main {
 }
 .next-q:hover {
     background-color: rgb(255, 101, 247);
+}
+.answers.last {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 }
