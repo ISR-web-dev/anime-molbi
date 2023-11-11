@@ -1,0 +1,99 @@
+* {
+    font-family: 'Lexend Exa', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: White;
+}
+body {
+    background-color: blueviolet;
+    padding: 150px 0;
+}
+.results-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 95%;
+    margin-bottom: 20px;
+    background-color: rgb(79, 24, 130);
+    border-radius: 12px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(79, 24, 130);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.316);
+}
+header a {
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-mcqs-container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+    width: 90%;
+}
+@media screen and (max-width: 1025px) {
+    .image-mcqs-container {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        align-items: center;
+    }
+}
+.image-mcqs-container img {
+    width: 100%;
+    border-radius: 12px;
+}
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 400px;
+}
+.answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(79, 24, 130);
+    border-radius: 12px;
+    transition: 0.15s;
+    padding: 10px 10px;
+}
+.answer:hover {
+    background-color: rgb(141, 70, 206);
+}
+.ads-container {
+    height: 400px;
+    width: 100%;
+}
+.next-q {
+    background-color: rgb(255, 13, 243);
+    border: none;
+    width: 40%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 12px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.next-q:hover {
+    background-color: rgb(255, 101, 247);
+}
